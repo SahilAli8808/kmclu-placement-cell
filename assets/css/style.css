@@ -428,11 +428,15 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 56px;
+  font-size: 35px;
   font-weight: 700;
-  line-height: 72px;
+  line-height: 64px;
   color: #124265;
   font-family: "Poppins", sans-serif;
+}
+#hero h1 span {
+  font-size: 25px;
+  font-weight: 600;
 }
 
 #hero h2 {
