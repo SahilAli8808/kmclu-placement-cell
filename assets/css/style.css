@@ -421,11 +421,6 @@ h6 {
   padding-top: 0px;
 }
 
-/* Carousel CSS */
-.carousel{
-  height: 95vh;
-  /* max-height: 100%; */
-}
 .carousel-caption h5 {
   color: #11dbcf;
 }
