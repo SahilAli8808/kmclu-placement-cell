@@ -422,8 +422,13 @@ h6 {
 }
 
 /* Carousel CSS */
+.carousel-item img{
+  height: 95vh;
+  /* max-height: 100%; */
+}
 
-#hero .icon-boxes {
+
+/* #hero .icon-boxes {
   margin-top: 75px;
 }
 
@@ -473,7 +478,7 @@ h6 {
 
 #hero .icon-box:hover .title a {
   color: #2487ce;
-}
+} */
 
 @media (min-width: 1024px) {
   #hero {
