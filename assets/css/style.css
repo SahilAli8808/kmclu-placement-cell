@@ -1,9 +1,3 @@
-/**
-* Template Name: OnePage - v4.9.0
-* Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -152,10 +146,11 @@ h6 {
 
 #header .logo a {
   color: #16507b;
+  text-decoration: none;
 }
 
 #header .logo img {
-  max-height: 60px;
+  max-height: 70px;
 }
 
 @media (max-width: 992px) {
@@ -423,48 +418,13 @@ h6 {
 }
 
 #hero .container {
-  padding-top: 80px;
+  padding-top: 0px;
 }
 
-#hero h1 {
-  margin: 0;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 64px;
-  color: #124265;
-  font-family: "Poppins", sans-serif;
-}
-#hero h1 span {
-  font-size: 25px;
-  font-weight: 600;
-}
-
-#hero h2 {
-  color: #5e5e5e;
-  margin: 10px 0 0 0;
-  font-size: 22px;
-}
-
-#hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  padding: 14px 50px;
-  border-radius: 5px;
-  transition: 0.5s;
-  margin-top: 30px;
-  color: #fff;
-  background: #2487ce;
-}
-
-#hero .btn-get-started:hover {
-  background: #3194db;
-}
+/* Carousel CSS */
 
 #hero .icon-boxes {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 #hero .icon-box {
@@ -476,12 +436,13 @@ h6 {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
-}
+} 
 
 #hero .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  text-align: center;
 }
 
 #hero .icon-box .title a {
@@ -493,6 +454,7 @@ h6 {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 #hero .icon-box .icon {
@@ -545,7 +507,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 60px 0;
   overflow: hidden;
 }
 
