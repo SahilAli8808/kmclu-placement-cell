@@ -124,7 +124,7 @@ h6 {
   transition: all 0.5s;
   background: #fff;
   z-index: 997;
-  padding: 10px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #e6f2fb;
   margin: 0 0;
 }
@@ -135,7 +135,7 @@ h6 {
 }
 
 #header .logo {
-  font-size: 28px;
+  font-size: 23px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -150,7 +150,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 60px;
+  max-height: 45px;
 }
 
 @media (max-width: 992px) {
