@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: #469fdf;
+  color: #ff5828;
   text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #3e9bdd;
+  background: #ff5828;
   color: #fff;
 }
 
@@ -78,7 +78,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #2487ce;
+  border: 6px solid #ff5828;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -124,7 +124,7 @@ h6 {
   transition: all 0.5s;
   background: #fff;
   z-index: 997;
-  padding: 15px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #e6f2fb;
   margin: 0 0;
 }
@@ -155,7 +155,10 @@ h6 {
 
 @media (max-width: 992px) {
   #header .logo {
-    font-size: 30px;
+    font-size: 12px;
+  }
+  #header .logo img {
+    max-height: 45px;
   }
 }
 
