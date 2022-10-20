@@ -502,6 +502,10 @@ section {
   font-size: 14px;
   color: #919191;
 }
+.marquee a {
+  text-decoration: none;
+  color: black;
+}
 
 /*--------------------------------------------------------------
 # About
