@@ -190,7 +190,9 @@ h6 {
 .navbar li {
   position: relative;
 }
-
+.navbar ul li a{
+  text-decoration: none;
+}
 .navbar a,
 .navbar a:focus {
   display: flex;
