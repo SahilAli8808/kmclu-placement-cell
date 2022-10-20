@@ -2,9 +2,8 @@
   <img src="https://github.com/SahilAli8808/kmclu-placement-cell/blob/dev/assets/img/logo.png" width="10%" alt='project-monai'>  </p>
 <!-- Table of Contents -->
 
- # Reform-Portal-FB-ESDProgram-B1
-This is the Sample Project of Reform Poratal First Batch Assigned by ESD India Program. This project Java Maven Based project.
-
+ # KMCLU Training and Placement Cell Website
+This is the Sample Project of KMCLU Training and Placement Cell Website.
 <!-- Badges -->
 <p>
   <a href="https://github.com/SahilAli8808/Reform-Portal-FB-ESDProgram-B1/graphs/contributors">
