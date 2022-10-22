@@ -880,11 +880,12 @@ section {
   margin-top: 10px;
   border: 2px solid #fff;
   color: #fff;
+  text-decoration: none;
 }
 
 .cta .cta-btn:hover {
-  background: #fff;
-  color: #2487ce;
+  background: #ff5828;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1509,7 +1510,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #3194db;
+  background: #ff5828;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1714,14 +1715,10 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #3194db;
+  background: #ff5828;
 }
 
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-  color: #444444;
-}
+
 
 #footer .social-links a {
   font-size: 18px;
@@ -1739,7 +1736,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #3194db;
+  background: #ff5828;
   color: #fff;
   text-decoration: none;
 }
