@@ -6,23 +6,23 @@
 This is the Sample Project of KMCLU Training and Placement Cell Website.
 <!-- Badges -->
 <p>
-  <a href="https://github.com/SahilAli8808/Reform-Portal-FB-ESDProgram-B1/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/SahilAli8808/Reform-Portal-FB-ESDProgram-B1" alt="contributors" />
+  <a href="https://github.com/SahilAli8808/kmclu-placement-cell/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/SahilAli8808/kmclu-placement-cell" alt="contributors" />
   </a>
   <a href="">
-    <img src="https://img.shields.io/github/last-commit/SahilAli8808/Reform-Portal-FB-ESDProgram-B1" alt="last update" />
+    <img src="https://img.shields.io/github/last-commit/SahilAli8808/kmclu-placement-cell" alt="last update" />
   </a>
-  <a href="https://github.com/SahilAli8808/Reform-Portal-FB-ESDProgram-B1/network/members">
-    <img src="https://img.shields.io/github/forks/SahilAli8808/Reform-Portal-FB-ESDProgram-B1" alt="forks" />
+  <a href="https://github.com/SahilAli8808/kmclu-placement-cell/network/members">
+    <img src="https://img.shields.io/github/forks/SahilAli8808/kmclu-placement-cell" alt="forks" />
   </a>
-  <a href="https://github.com/SahilAli8808/Reform-Portal-FB-ESDProgram-B1/stargazers">
+  <a href="https://github.com/SahilAli8808/kmclu-placement-cell/stargazers">
     <img src="https://img.shields.io/github/stars/SahilAli8808/Reform-Portal-FB-ESDProgram-B1" alt="stars" />
   </a>
-  <a href="https://github.com/SahilAli8808/Reform-Portal-FB-ESDProgram-B1/issues/">
-    <img src="https://img.shields.io/github/issues/SahilAli8808/Reform-Portal-FB-ESDProgram-B1" alt="open issues" />
+  <a href="https://github.com/SahilAli8808/kmclu-placement-cell/issues/">
+    <img src="https://img.shields.io/github/issues/SahilAli8808/kmclu-placement-cell" alt="open issues" />
   </a>
   <a href="https://github.com/Louis3797/awesome-readme-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/SahilAli8808/Reform-Portal-FB-ESDProgram-B1.svg" alt="license" />
+    <img src="https://img.shields.io/github/license/SahilAli8808/kmclu-placement-cell.svg" alt="license" />
   </a>
 </p>
   
