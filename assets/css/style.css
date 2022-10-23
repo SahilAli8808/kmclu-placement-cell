@@ -508,7 +508,18 @@ section {
   text-decoration: none;
   color: black;
 }
-
+#atAGlance .card {
+  height: 85vh;
+  overflow-x: scroll;
+}
+#atAGlance .card-body ul li a {
+  text-decoration: none;
+  color: #217bbc;
+}
+#atAGlance .card-body ul li a:hover {
+  text-decoration: underline;
+  color: #ff5828;
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
