@@ -466,13 +466,6 @@ h6 {
   }
 }
 
-.marquee {
-  padding: 0 5px;
-  margin: 0;
-}
-
-
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -505,14 +498,23 @@ section {
   color: #919191;
 }
 /* marquee */
+.marquee {
+  padding: 0 5px;
+  margin: 0;
+}
 .marquee a {
   text-decoration: none;
   color: black;
+}
+.marquee h6{
+ font-family: poppins, sans-serif;
 }
 /* At a Glance */
 #atAGlance .card {
   height: 85vh;
   overflow-x: scroll;
+  margin: 0 0.5rem;
+  border-radius: 0.25rem;
 }
 #atAGlance .card .card-header {
   background-color: #ff5828;
