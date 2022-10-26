@@ -512,12 +512,17 @@ section {
   height: 85vh;
   overflow-x: scroll;
 }
+#atAGlance .card-body {
+  text-align: left;
+}
 #atAGlance .card-body ul li a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 600;
   text-decoration: none;
-  color: #217bbc;
+  color: #000;
 }
 #atAGlance .card-body ul li a:hover {
-  text-decoration: underline;
   color: #ff5828;
 }
 /*--------------------------------------------------------------
