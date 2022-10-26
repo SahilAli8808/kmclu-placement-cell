@@ -961,8 +961,8 @@
               getting latest notification of Upcoming training and placment
               drive Cell via an email.
             </p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Get">
+            <form method="post" role="form" id="newsletter">
+              <input type="email" id="email" name="email"><button type="submit" >Subscribe</button>
             </form>
           </div>
 
@@ -1033,6 +1033,22 @@
         success: function (result) {
           jQuery('#contact-form')[0].reset();
           jQuery('#sent-message').html('Your message has been sent. Thank you!');
+
+        }
+      })
+    })
+  </script>
+  <!-- Script for newsletter form -->
+  <script>
+    jQuery('#newsletter').on('submit', function (e) {
+      e.preventDefault();
+      jQuery.ajax({
+        url:
+        'https://script.google.com/macros/s/AKfycbzxtlaCjBTeBl9jEzczXivtPk1hJNLFDY79OQoHTOdDIodUFAM3a2SmH1M4d0yF9YtG/exec',
+        type: 'post',
+        data: jQuery('#newsletter').serialize(),
+        success: function (result) {
+          jQuery('#newsletter')[0].reset();
 
         }
       })

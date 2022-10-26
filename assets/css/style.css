@@ -1720,7 +1720,7 @@ section {
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter button{
   position: absolute;
   top: -1px;
   right: -2px;
@@ -1736,7 +1736,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter button:hover {
   background: #ff5828;
 }
 
