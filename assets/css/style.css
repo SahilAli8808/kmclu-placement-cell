@@ -504,17 +504,20 @@ section {
   font-size: 14px;
   color: #919191;
 }
+/* marquee */
 .marquee a {
   text-decoration: none;
   color: black;
 }
+/* At a Glance */
 #atAGlance .card {
   height: 85vh;
   overflow-x: scroll;
 }
 #atAGlance .card .card-header {
-  background-color: #fff;
- z-index: 997;
+  background-color: #ff5828;
+  z-index: 997;
+  color: #fff;
 }
 #atAGlance .card-body {
   text-align: left;
@@ -555,7 +558,7 @@ section {
   left: 0;
   top: 2px;
   font-size: 20px;
-  color: #2487ce;
+  color: #ff5828;
   line-height: 1;
 }
 
@@ -581,7 +584,7 @@ section {
 }
 
 .about .content .btn-learn-more:hover {
-  background: #2487ce;
+  background: #ff5828;
   color: #fff;
   text-decoration: none;
 }
