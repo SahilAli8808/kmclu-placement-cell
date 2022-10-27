@@ -3,7 +3,7 @@
 <!-- Table of Contents -->
 
  # KMCLU Training and Placement Cell Website
-This is the Sample Project of KMCLU Training and Placement Cell Website.
+This is the Code of website of Training & Placement Cell, KMCLU, Lucknow.
 <!-- Badges -->
 <p>
   <a href="https://github.com/SahilAli8808/kmclu-placement-cell/graphs/contributors">
@@ -16,19 +16,19 @@ This is the Sample Project of KMCLU Training and Placement Cell Website.
     <img src="https://img.shields.io/github/forks/SahilAli8808/kmclu-placement-cell" alt="forks" />
   </a>
   <a href="https://github.com/SahilAli8808/kmclu-placement-cell/stargazers">
-    <img src="https://img.shields.io/github/stars/SahilAli8808/Reform-Portal-FB-ESDProgram-B1" alt="stars" />
+    <img src="https://img.shields.io/github/stars/SahilAli8808/kmclu-placement-cell" alt="stars" />
   </a>
   <a href="https://github.com/SahilAli8808/kmclu-placement-cell/issues/">
     <img src="https://img.shields.io/github/issues/SahilAli8808/kmclu-placement-cell" alt="open issues" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/SahilAli8808/kmclu-placement-cell.svg" alt="license" />
+  <a href="https://github.com/SahilAli8808/kmclu-placement-cell/blob/main/licence">
+    <img src="https://img.shields.io/github/license/SahilAli8808/kmclu-placement-cell" alt="license" />
   </a>
 </p>
   
 ## Description
 
-This Project is for official  website of training and placement cell of khwaja moinuddin chishti language university lucknow.
+This is the code of the official website of the Training & Placement Cell, Khwaja Moinuddin Chishti Language University, Lucknow.
 
 ## Getting Started
 
@@ -43,10 +43,9 @@ This Project is for official  website of training and placement cell of khwaja m
   <img src="https://github.com/SahilAli8808/kmclu-placement-cell/blob/dev/assets/img/screenshots/1.png" alt="screenshot" />
 </div>
 
-### Executing program
+### Live Website
 
-* To Excute the program can go through the github page 
-* Copy the below link and go through it.
+* The website is live at the following URL.
 ```
 https://sahilali8808.github.io/kmclu-placement-cell/
 ```
@@ -63,7 +62,7 @@ git clone https://github.com/https://github.com/SahilAli8808/kmclu-placement-cel
 
 ## License
 
-This project is licensed under the kmcl university License - Visit placement.kmclu.ac.in for details.
+This project is licensed under the GNU-GPL V3.0 - Visit placement.kmclu.ac.in for details.
 
 # Our Contributors
 Here the table of Contributors of With there Roles.
