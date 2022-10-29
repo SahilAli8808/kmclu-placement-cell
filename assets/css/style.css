@@ -635,11 +635,9 @@ section {
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 10px 0;
-  filter: grayscale(100);
 }
 
 .clients img:hover {
-  filter: none;
   transform: scale(1.5);
 }
 
