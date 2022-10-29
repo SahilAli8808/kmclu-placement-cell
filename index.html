@@ -934,9 +934,9 @@
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
-                <div id="message" style="display: none;">
+                <div id="message1" style="display: none;">
                   <p>
-                    Your message has been sent. Thank you!
+                    Thank you for subscribing.
                   </p>
                 </div>
               </div>
@@ -1001,7 +1001,7 @@
               <input type="email" id="email" name="email" placeholder="Enter your Email"><button
                 type="submit">Subscribe</button>
             </form>
-            <div id="message" style="display: none;">
+            <div id="message2" style="display: none;">
               <p>Thanks for subscribing.</p>
             </div>
           </div>
@@ -1070,7 +1070,7 @@
         type: 'post',
         data: jQuery('#contact-form').serialize(),
         success: function (result) {
-          jQuery('#message').show();
+          jQuery('#message1').show();
           jQuery('#contact-form')[0].reset();
 
         }
@@ -1086,7 +1086,7 @@
         type: 'post',
         data: jQuery('#newsletter').serialize(),
         success: function (result) {
-          jQuery('#message').show();
+          jQuery('#message2').show();
           jQuery('#newsletter')[0].reset();
         }
       })
