@@ -524,7 +524,11 @@ section {
 #atAGlance .card-body {
   text-align: left;
 }
-
+#atAGlance .card-body .card-text ul {
+  margin: 0;
+  padding: 0;
+  list-style: circle;
+}
 #atAGlance .card-body ul li a {
   font-weight: 600;
   text-decoration: none;
