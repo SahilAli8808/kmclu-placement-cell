@@ -47,7 +47,7 @@ This is the code of the official website of the Training & Placement Cell, Khwaj
 
 * The website is live at the following URL.
 ```
-https://sahilali8808.github.io/kmclu-placement-cell/
+https://placement.kmclu.ac.in
 ```
 
 ## Help
