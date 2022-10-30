@@ -40,7 +40,7 @@ This is the code of the official website of the Training & Placement Cell, Khwaj
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="https://github.com/SahilAli8808/kmclu-placement-cell/blob/dev/assets/img/screenshots/1.png" alt="screenshot" />
+  <img src="https://github.com/SahilAli8808/kmclu-placement-cell/blob/main/assets/img/screenshots/1.png" alt="screenshot"/>
 </div>
 
 ### Live Website
