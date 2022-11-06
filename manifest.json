@@ -23,19 +23,9 @@
         }
     ],
     "screenshots": [{
-        "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
-        "sizes": "2880x1800",
+        "src": "https://placement.kmclu.ac.in/assets/img/screenshots/1.png",
+        "sizes": "1366x768",
         "type": "image/png",
         "description": "A screenshot of the home page"
     }],
-    "related_applications": [{
-        "platform": "windows",
-        "url": " The URL to your app in that app store"
-    }],
-    "prefer_related_applications": "false",
-    "shortcuts": [{
-        "name": "The name you would like to be displayed for your shortcut",
-        "url": "The url you would like to open when the user chooses this shortcut. This must be a URL local to your PWA. For example: If my start_url is /, this URL must be something like /shortcut",
-        "description": "A description of the functionality of this shortcut"
-    }]
 }

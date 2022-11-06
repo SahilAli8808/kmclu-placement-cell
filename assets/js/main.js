@@ -1,5 +1,4 @@
-
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -104,7 +103,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -113,7 +112,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -123,7 +122,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -207,9 +206,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -217,7 +216,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -267,3 +266,17 @@
   new PureCounter();
 
 })()
+
+// Service Worker
+
+if ('serviceWorker' in navigator) {
+  // Register a service worker hosted at the root of the
+  // site using the default scope.
+  navigator.serviceWorker.register('/assets/js/service-worker.js').then((registration) => {
+    console.log('Service worker registration succeeded:', registration);
+  }, /*catch*/ (error) => {
+    console.error(`Service worker registration failed: ${error}`);
+  });
+} else {
+  console.error('Service workers are not supported.');
+}
