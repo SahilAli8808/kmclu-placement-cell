@@ -54,7 +54,7 @@
   <meta property="og:image" content="https://placement.kmclu.ac.in/assets/img/logo300x300.png" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_IN" />
-
+  <meta name="theme-color" content="#ff5828" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
@@ -78,7 +78,10 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script>
+    navigator.serviceWorker.register("assets/js/service-worker.js")
+  </script>
+  <link rel="manifest" href="manifest.json" />
 </head>
 
 <body>
