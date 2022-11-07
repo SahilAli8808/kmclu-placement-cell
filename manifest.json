@@ -27,6 +27,21 @@
         "sizes": "1366x768",
         "type": "image/png",
         "description": "A screenshot of the home page"
+    }],
+    "related_applications": [{
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=com.kmclu.placement",
+        "id": "com.kmclu.placement"
+    }],
+    "shortcuts": [{
+        "name": "Start Live Session",
+        "short_name": "Start Live",
+        "description": "Jump direction into starting or joining a live session",
+        "url": "/?startLive",
+        "icons": [{
+            "src": "https://pwabuilder.com/assets/icons/icon_192.png",
+            "sizes": "192x192"
+        }]
     }]
 
 }
