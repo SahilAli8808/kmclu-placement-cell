@@ -2,7 +2,7 @@
     "name": "Training & Placement Cell, KMCLU",
     "short_name": "Training & Placement Cell, KMCLU",
     "start_url": "index.html",
-    "scope": "./",
+    "scope": "/",
     "display": "standalone",
     "description": "Official Website of Training & Placement Cell, Khwaja Moinuddin Chishti Langauge University, Lucknow.",
     "lang": "en_IN",
