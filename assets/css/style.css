@@ -434,7 +434,10 @@ h6 {
 }
 
 .carousel-caption h5 {
-  color: #11dbcf;
+  font-family: Poppins, sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
 }
 
 
