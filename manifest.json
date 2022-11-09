@@ -1,7 +1,8 @@
 {
     "name": "Training & Placement Cell, KMCLU",
     "short_name": "Training & Placement Cell, KMCLU",
-    "start_url": "https://placement.kmclu.ac.in",
+    "start_url": "index.html",
+    "scope": "./",
     "display": "standalone",
     "description": "Official Website of Training & Placement Cell, Khwaja Moinuddin Chishti Langauge University, Lucknow.",
     "lang": "en_IN",
@@ -10,20 +11,20 @@
     "background_color": "#000000",
     "orientation": "any",
     "icons": [{
-            "src": "https://placement.kmclu.ac.in/assets/img/favicon/android-chrome-512x512.png",
+            "src": "/assets/img/favicon/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https://placement.kmclu.ac.in/assets/img/favicon/android-chrome-192x192.png",
+            "src": "/assets/img/favicon/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         }
     ],
     "screenshots": [{
-        "src": "https://placement.kmclu.ac.in/assets/img/screenshots/1.png",
+        "src": "/assets/img/screenshots/1.png",
         "sizes": "1366x768",
         "type": "image/png",
         "description": "A screenshot of the home page"
@@ -39,7 +40,7 @@
         "description": "Jump direction into starting or joining a live session",
         "url": "/?startLive",
         "icons": [{
-            "src": "https://pwabuilder.com/assets/icons/icon_192.png",
+            "src": "/assets/img/favicon/android-chrome-192x192.png",
             "sizes": "192x192"
         }]
     }]
