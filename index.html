@@ -14,6 +14,21 @@
 
     gtag('config', 'G-KD3KV5KGQ5');
   </script>
+  <script>
+    // Service Worker
+
+    if ('serviceWorker' in navigator) {
+      // Register a service worker hosted at the root of the
+      // site using the default scope.
+      navigator.serviceWorker.register('service-worker.js').then((registration) => {
+        console.log('Service worker registration succeeded:', registration);
+      }, /*catch*/ (error) => {
+        console.error(`Service worker registration failed: ${error}`);
+      });
+    } else {
+      console.error('Service workers are not supported.');
+    }
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Training & Placemement Cell || Khwaja Moinuddin Chishti Language University, Lucknow</title>
@@ -77,7 +92,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-<script>navigator.serviceWorker.register("assets/js/service-worker.js")</script> 
+  <script>
+    navigator.serviceWorker.register("assets/js/service-worker.js")
+  </script>
   <link rel="manifest" href="manifest.json" />
 </head>
 
