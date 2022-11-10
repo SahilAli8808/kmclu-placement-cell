@@ -1,7 +1,7 @@
 
 {
-    "name": "Training &amp; Placement Cell, KMCLU",
-    "short_name": "Training &amp; Placement Cell, KMCLU",
+    "name": "Training & Placement Cell, KMCLU",
+    "short_name": "Training & Placement Cell, KMCLU",
     "start_url": "index.html",
     "scope": "./",
     "display": "standalone",
