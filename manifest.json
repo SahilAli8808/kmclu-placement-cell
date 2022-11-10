@@ -46,6 +46,6 @@
         "education"
     ],
     "display_override": [
-        "browser"
+        "standalone"
     ]
 }
