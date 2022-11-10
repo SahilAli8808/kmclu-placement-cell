@@ -1,11 +1,12 @@
+
 {
-    "name": "Training & Placement Cell, KMCLU",
-    "short_name": "Training & Placement Cell, KMCLU",
+    "name": "Training &amp; Placement Cell, KMCLU",
+    "short_name": "Training &amp; Placement Cell, KMCLU",
     "start_url": "index.html",
     "scope": "./",
     "display": "standalone",
-    "description": "Official Website of Training & Placement Cell, Khwaja Moinuddin Chishti Langauge University, Lucknow.",
-    "lang": "en_IN",
+    "description": "Official Website of Training &amp; Placement Cell, Khwaja Moinuddin Chishti Langauge University, Lucknow.",
+    "lang": "en",
     "dir": "auto",
     "theme_color": "#ff5828",
     "background_color": "#000000",
@@ -29,11 +30,8 @@
         "type": "image/png",
         "description": "A screenshot of the home page"
     }],
-    "prefer_related_applications": true,
-    "related_applications": [{
-        "platform": "play",
-        "id": "com.kmclu.placement"
-    }],
+    "prefer_related_applications": false,
+    "related_applications": [],
     "shortcuts": [{
         "name": "Start Live Session",
         "short_name": "Start Live",
@@ -43,6 +41,8 @@
             "src": "/assets/img/favicon/android-chrome-192x192.png",
             "sizes": "192x192"
         }]
-    }]
-
+    }],
+    "categories": [
+        "education"
+    ]
 }
