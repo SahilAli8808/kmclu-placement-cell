@@ -516,7 +516,7 @@ section {
 /* At a Glance */
 #atAGlance .card {
   height: 85vh;
-  overflow-x: scroll;
+  overflow-x: scroll !important;
   margin: 0 0.5rem;
   border-radius: 0.25rem;
 }
