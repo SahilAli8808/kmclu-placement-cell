@@ -337,7 +337,8 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="3000">
-                <img class="d-block w-100" src="assets/img/events/Experiome Workshop.webp" class="card-img-top" alt="...">
+                <img class="d-block w-100" src="assets/img/events/Experiome Workshop.webp" class="card-img-top"
+                  alt="...">
               </div>
               <div class="carousel-item" data-bs-interval="3000">
                 <img class="d-block w-100" src="assets/img/events/Lunar Eclipse.webp" class="card-img-top" alt="...">
@@ -361,7 +362,7 @@
           <p class="card-text">
             <ul>
               <li><a href="https://drive.google.com/file/d/1C6cDwz9_iY5ykBcU3lN4OAioScxPRtth/view?usp=share_link"
-                  target="_blank">Two Days Workshop on Bioinformatics by Experiome  Biotech</a>
+                  target="_blank">Two Days Workshop on Bioinformatics by Experiome Biotech</a>
               </li>
               <li><a href="https://drive.google.com/file/d/1ABhOJx7vHEKnGX0DA28gPeaHmLr-DwsC/view?usp=share_link"
                   target="_blank">Astronomers Club Members Observed Lunar Eclipse 2022</a>
@@ -1200,10 +1201,10 @@
         <p>
           <strong>
             Developed by
-            <a href="https://github.com/SubhanRaj" target="_blank">Subhan Raj</a>, 
-            <a href="https://github.com/SahilAli8808" target="_blank">Sahil Ali</a> and 
+            <a href="https://github.com/SubhanRaj" target="_blank">Subhan Raj</a>,
+            <a href="https://github.com/SahilAli8808" target="_blank">Sahil Ali</a> and
             <a href="https://github.com/mishravaishnavi" target="_blank">Vaishnavi Mishra</a>
-             Under the Guidance of
+            Under the Guidance of
             <a href="#">Ms. Nidhi Sonkar</a>.
             Maintained by Training & Placement Cell, KMCLU
           </strong>
@@ -1224,6 +1225,7 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/sweetalert/sweetalert.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -1257,6 +1259,11 @@
         }
       })
     })
+  </script>
+  <script>
+    window.addEventListener('offline', function (e) {
+      swal("Oops", "You are offline!", "error")
+    });
   </script>
 </body>
 
