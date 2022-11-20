@@ -1,43 +1,54 @@
-const HOSTNAME_WHITELIST = [
-    self.location.hostname,
-    'fonts.gstatic.com',
-    'fonts.googleapis.com',
-    'cdn.jsdelivr.net'
-]
+// This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
 
-// The Util Function to hack URLs of intercepted requests
-const getFixedUrl = (req) => {
-    var now = Date.now()
-    var url = new URL(req.url)
+const CACHE = "pwabuilder-offline-page";
 
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
-    url.protocol = self.location.protocol
+// TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
+const offlineFallbackPage = "offline.html";
 
-    if (url.hostname === self.location.hostname) {
-        url.search += (url.search ? '&' : '?') + 'cache-bust=' + now
+self.addEventListener("message", (event) => {
+    if (event.data && event.data.type === "SKIP_WAITING") {
+        self.skipWaiting();
     }
-    return url.href
+});
+
+self.addEventListener('install', async (event) => {
+    event.waitUntil(
+        caches.open(CACHE)
+        .then((cache) => cache.add(offlineFallbackPage))
+    );
+});
+
+if (workbox.navigationPreload.isSupported()) {
+    workbox.navigationPreload.enable();
 }
 
+workbox.routing.registerRoute(
+    new RegExp('/*'),
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: CACHE
+    })
+);
 
-self.addEventListener('activate', event => {
-    event.waitUntil(self.clients.claim())
-})
+self.addEventListener('fetch', (event) => {
+    if (event.request.mode === 'navigate') {
+        event.respondWith((async () => {
+            try {
+                const preloadResp = await event.preloadResponse;
 
+                if (preloadResp) {
+                    return preloadResp;
+                }
 
-//   fetch latest data from the internet and if the data is not available then use the cached data
+                const networkResp = await fetch(event.request);
+                return networkResp;
+            } catch (error) {
 
-self.addEventListener('fetch', event => {
-    const req = event.request
-    const url = new URL(req.url)
-
-    if (req.method !== 'GET' || !HOSTNAME_WHITELIST.includes(url.hostname)) {
-        return
+                const cache = await caches.open(CACHE);
+                const cachedResp = await cache.match(offlineFallbackPage);
+                return cachedResp;
+            }
+        })());
     }
-
-    event.respondWith(
-        fetch(getFixedUrl(req), {
-            mode: 'cors'
-        }).catch(() => caches.match(req))
-    )
-})
+});
