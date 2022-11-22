@@ -1092,13 +1092,6 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div id="message1" style="display: none;">
-                  <p>
-                    Your response has been recorded, Thank You.
-                  </p>
-                </div>
-              </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
 
             </form>
@@ -1180,7 +1173,7 @@
           All Rights Reserved
         </div>
         <div>
-          Last Updated on <strong><span>21-Nov-2022</span></strong>
+          Last Updated on <strong><span>22-Nov-2022</span></strong>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -1238,7 +1231,7 @@
         type: 'post',
         data: jQuery('#contact-form').serialize(),
         success: function (result) {
-          jQuery('#message1').show();
+          swal("Thank You!", "We will contact you soon!", "success");
           jQuery('#contact-form')[0].reset();
 
         }
