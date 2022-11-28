@@ -20,7 +20,7 @@
         if ('serviceWorker' in navigator) {
             // Register a service worker hosted at the root of the
             // site using the default scope.
-            navigator.serviceWorker.register('service-worker.js').then((registration) => {
+            navigator.serviceWorker.register('/service-worker.js').then((registration) => {
                 console.log('Service worker registration succeeded:', registration);
             }, /*catch*/ (error) => {
                 console.error(`Service worker registration failed: ${error}`);
@@ -32,41 +32,68 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Training & Placemement Cell || Khwaja Moinuddin Chishti Language University, Lucknow</title>
-    <meta
-        content="Official Website of Training & Placement Cell, Khwaja Moinuddin Chishti Langauge University, Lucknow.
-    Training and Placement Cell, KMCLU, Lucknow, Placement KMCLU, KMCLU Placement, Placement in Lucknow, University in
-    Lucknow, KMCLU Training & Placement, Lucknow University, Dr. Syed Haider Ali, Prof. N.B. Singh, AKTU, Karishma
-    Singh, FoET Training, FoET KMCLU, Engineering at KMCLU, KMC, FoET Khwaja Moinuddin Chishti Language University,
-    Softpro, Club Oxygen, Training and Placement Company in Lucknow, BCA in Lucknow, MCA in Lucknow, BTech in Lucknow,
-    Best Engineering College in Lucknow, Ayushi Mishra, Vivek Verma, Synclovis, Best BTech College in Lucknow, acxiom
-    consulting pvt ltd, uttar pradesh best mca college, Sahil Ali, Subhan Raj, Softpro Technologies, DLW Varanasi, Vivek
-    Bajpai, Balaji Construction Company Lucknow, Highest Package, Pie Infocomm, Electrocus, Nidhi Sonker, Arpit Katiyar, Shan E Fatima"
-        name="description" />
-    <meta content="Training & Placement Cell, Khwaja Moinuddin Chishti Language University, Training and Placement Cell,
-    KMCLU, Lucknow, Training & Placement Cell, KMCLU Placement, Placement KMCLU, University in Lucknow, KMCLU Training &
-    Placement, Official Website of Training & Placement Cell, Khwaja Moinuddin Chishti Langauge University, Lucknow.
-    Training and Placement Cell, KMCLU, Lucknow, Placement KMCLU, KMCLU Placement, Placement in Lucknow, University in
-    Lucknow, KMCLU Training & Placement, Lucknow University, Dr. Syed Haider Ali, Prof. N.B. Singh, AKTU, Karishma
-    Singh, FoET Training, FoET KMCLU, Engineering at KMCLU, KMC, FoET Khwaja Moinuddin Chishti Language University,
-    Softpro, Club Oxygen, Training and Placement Company in Lucknow, BCA in Lucknow, MCA in Lucknow, BTech in Lucknow,
-    Best Engineering College in Lucknow, Ayushi Mishra, Vivek Verma, Synclovis, Best BTech College in Lucknow, acxiom
-    consulting pvt ltd, uttar pradesh best mca college, Sahil Ali, Subhan Raj, Softpro Technologies, DLW Varanasi, Vivek
-    Bajpai, Balaji Construction Company Lucknow, Highest Package, Pie Infocomm, Electrocus, Nidhi Sonker, Arpit Katiyar,
-    Shan E Fatima" name="keywords" />
+    <meta content="Training & Placement Cell, Khwaja Moinuddin Chishti Langauge
+      University, Official Website of Training & Placement Cell, Khwaja
+      Moinuddin Chishti Langauge University, Lucknow.
+      Training and Placement Cell, KMCLU, Lucknow, Placement KMCLU, KMCLU
+      Placement, Placement in Lucknow, University in
+      Lucknow, KMCLU Training & Placement, Lucknow University, Dr. Syed Haider
+      Ali, Prof. N.B. Singh, AKTU, Karishma
+      Singh, FoET Training, FoET KMCLU, Engineering at KMCLU, KMC, FoET Khwaja
+      Moinuddin Chishti Language University,
+      Softpro, Club Oxygen, Training and Placement Company in Lucknow, BCA in
+      Lucknow, MCA in Lucknow, BTech in Lucknow,
+      Best Engineering College in Lucknow, Ayushi Mishra, Vivek Verma,
+      Synclovis, Best BTech College in Lucknow, acxiom
+      consulting pvt ltd, uttar pradesh best mca college, Sahil Ali, Subhan Raj,
+      Softpro Technologies, DLW Varanasi, Vivek
+      Bajpai, Balaji Construction Company Lucknow, Highest Package, Pie
+      Infocomm, Electrocus, Nidhi Sonker, Arpit Katiyar, Shan E Fatima" name="description" />
+    <meta content="Training & Placement Cell, Khwaja Moinuddin Chishti Langauge
+      University, Training & Placement Cell, Khwaja Moinuddin Chishti Language
+      University, Training and Placement Cell,
+      KMCLU, Lucknow, Training & Placement Cell, KMCLU Placement, Placement
+      KMCLU, University in Lucknow, KMCLU Training &
+      Placement, Official Website of Training & Placement Cell, Khwaja Moinuddin
+      Chishti Langauge University, Lucknow.
+      Training and Placement Cell, KMCLU, Lucknow, Placement KMCLU, KMCLU
+      Placement, Placement in Lucknow, University in
+      Lucknow, KMCLU Training & Placement, Lucknow University, Dr. Syed Haider
+      Ali, Prof. N.B. Singh, AKTU, Karishma
+      Singh, FoET Training, FoET KMCLU, Engineering at KMCLU, KMC, FoET Khwaja
+      Moinuddin Chishti Language University,
+      Softpro, Club Oxygen, Training and Placement Company in Lucknow, BCA in
+      Lucknow, MCA in Lucknow, BTech in Lucknow,
+      Best Engineering College in Lucknow, Ayushi Mishra, Vivek Verma,
+      Synclovis, Best BTech College in Lucknow, acxiom
+      consulting pvt ltd, uttar pradesh best mca college, Sahil Ali, Subhan Raj,
+      Softpro Technologies, DLW Varanasi, Vivek
+      Bajpai, Balaji Construction Company Lucknow, Highest Package, Pie
+      Infocomm, Electrocus, Nidhi Sonker, Arpit Katiyar,
+      Shan E Fatima" name="keywords" />
     <!-- og:meta tags -->
-    <meta property="og:title"
-        content="Training & Placemement Cell || Khwaja Moinuddin Chishti Language University, Lucknow" />
+    <meta property="og:title" content="Training & Placemement Cell || Khwaja Moinuddin Chishti Language
+      University, Lucknow" />
     <meta property="og:url" content="https://placement.kmclu.ac.in/" />
-    <meta property="og:description" content="Official Website of Training & Placement Cell, Khwaja Moinuddin Chishti Langauge University, Lucknow.
-    Training and Placement Cell, KMCLU, Lucknow, Placement KMCLU, KMCLU Placement, Placement in Lucknow, University in
-    Lucknow, KMCLU Training & Placement, Lucknow University, Dr. Syed Haider Ali, Prof. N.B. Singh, AKTU, Karishma
-    Singh, FoET Training, FoET KMCLU, Engineering at KMCLU, KMC, FoET Khwaja Moinuddin Chishti Language University,
-    Softpro, Club Oxygen, Training and Placement Company in Lucknow, BCA in Lucknow, MCA in Lucknow, BTech in Lucknow,
-    Best Engineering College in Lucknow, Ayushi Mishra, Vivek Verma, Synclovis, Best BTech College in Lucknow, acxiom
-    consulting pvt ltd, uttar pradesh best mca college, Sahil Ali, Subhan Raj, Softpro Technologies, DLW Varanasi, Vivek
-    Bajpai, Balaji Construction Company Lucknow, Highest Package, Pie Infocomm, Electrocus, Nidhi Sonker, Arpit Katiyar,
-    Shan E Fatima" />
-    <meta property="og:image" content="https://placement.kmclu.ac.in/assets/img/logo300x300.png" />
+    <meta property="og:description" content="Training & Placement Cell, Khwaja
+      Moinuddin Chishti Langauge University, Official Website of Training &
+      Placement Cell, Khwaja Moinuddin Chishti Langauge University, Lucknow.
+      Training and Placement Cell, KMCLU, Lucknow, Placement KMCLU, KMCLU
+      Placement, Placement in Lucknow, University in
+      Lucknow, KMCLU Training & Placement, Lucknow University, Dr. Syed Haider
+      Ali, Prof. N.B. Singh, AKTU, Karishma
+      Singh, FoET Training, FoET KMCLU, Engineering at KMCLU, KMC, FoET Khwaja
+      Moinuddin Chishti Language University,
+      Softpro, Club Oxygen, Training and Placement Company in Lucknow, BCA in
+      Lucknow, MCA in Lucknow, BTech in Lucknow,
+      Best Engineering College in Lucknow, Ayushi Mishra, Vivek Verma,
+      Synclovis, Best BTech College in Lucknow, acxiom
+      consulting pvt ltd, uttar pradesh best mca college, Sahil Ali, Subhan Raj,
+      Softpro Technologies, DLW Varanasi, Vivek
+      Bajpai, Balaji Construction Company Lucknow, Highest Package, Pie
+      Infocomm, Electrocus, Nidhi Sonker, Arpit Katiyar,
+      Shan E Fatima" />
+    <meta property="og:image" content="https://placement.kmclu.ac.in/assets/img/logo300x300.webp" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_IN" />
     <meta name="theme-color" content="#ff5828" />
@@ -90,11 +117,9 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/datatables/datatables.min.css" rel="stylesheet">
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <script>
-        navigator.serviceWorker.register("assets/js/service-worker.js")
-    </script>
     <link rel="manifest" href="manifest.json" />
 </head>
 
@@ -113,26 +138,31 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li class="dropdown"><a href="#about"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#about"><span>About Us</span><i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a class="nav-link scrollto" href="#team">Team</a></li>
                             <li><a class="nav-link scrollto" href="#clients">Training & Recruiting Partners</a></li>
                             <li><a href="https://kmclu.ac.in/mous/" target="_blank">MoUs</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#atAGlance"><span>At A Glance</span> <i
+                    <li class="dropdown"><a href="#atAGlance"><span>At A Glance</span><i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a class="nav-link scrollto" href="#atAGlance">News and Events</a></li>
                             <li><a class="nav-link scrollto" href="#atAGlance">Campus Drive</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#testimonials">Placement Highlights</a></li>
+                    <li class="dropdown"><a href="#testimonials"><span>Placement Highlights</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a class="nav-link" href="selected-students.html">Selected Students</a></li>
+                        </ul>
+                    </li>
                     <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- navbar -->
-
+            </nav>
+            <!-- navbar -->
         </div>
     </header><!-- End Header -->
 
@@ -141,7 +171,8 @@
         <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
             <!-- Carousel Started from here -->
 
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide
+            carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -174,7 +205,7 @@
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
                         <img class="d-block w-100" src="assets/img/carousel/2.webp"
-                            aalt="11 Students of KMCLU placed in Pie Infocomm with their offer letter along with Prof. NB Singh, VC KMCLU">
+                            alt="11 Students of KMCLU placed in Pie Infocomm with their offer letter along with Prof. NB Singh, VC KMCLU">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>11 Students Placed in Pie Infocomm</h5>
                         </div>
@@ -214,17 +245,18 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img class="d-block w-100" src="assets/img/carousel/8.webp"
-                            alt="Students Participating in Solar Eclipse 2022 as Volunteers">
+                        <img class="d-block w-100" src="assets/img/carousel/8.webp" alt="Students Participating in Solar Eclipse 2022 as
+                  Volunteers">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Students Participating in Solar Eclipse 2022 as Volunteers</h5>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img class="d-block w-100" src="assets/img/carousel/9.webp"
-                            alt="FoET KMCLU participating in Lunar Eclipse 22 orgainsed by Astronomers Club & UPAAC">
+                        <img class="d-block w-100" src="assets/img/carousel/9.webp" alt="FoET KMCLU participating in Lunar Eclipse 22 orgainsed by
+                  Astronomers Club & UPAAC">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>FoET KMCLU participating in Lunar Eclipse 22 orgainsed by Astronomers Club & UPAAC</h5>
+                            <h5>FoET KMCLU participating in Lunar Eclipse 22 orgainsed by
+                                Astronomers Club & UPAAC</h5>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
@@ -250,25 +282,26 @@
             <!-- Carousel Ended Here  -->
         </div>
     </section>
-    <!-- <section class="marquee">
-    <marquee behavior="alternate" direction="left">
-      <h6><a href="https://drive.google.com/file/d/1BVwKAcsxekl6DJ3qKZI_LsGWoqoYgMsm/view?usp=share_link"
-          target="_blank">Upcoming Campus Recruitment Drive Mind You Infotech for B.Tech. CSE, BCA & MCA Students <span
-            class="badge bg-danger">New</span></a>
-      </h6>
-    </marquee>
-    <marquee behavior="alternate" direction="right">
-      <h6><a href="#"><span class="badge bg-danger">Update</span><strong> There will be a registration fees of ₹100
-            in Mind You Infotech Placement Drive</strong></a>
-      </h6>
-    </marquee>
-    <marquee behavior="scroll" direction="left">
-      <h6><a href="https://forms.gle/v8wgDSJi571cq2pB7"
-          target="_blank">
-          Registration Form for Jio Smart Sales Trainee (For Graduates) </a><span
-          class="badge bg-danger">New</span></h6>
-    </marquee>
-  </section> -->
+    <section class="marquee">
+        <marquee behavior="alternate" direction="left">
+            <h6><a href="https://drive.google.com/file/d/1G-Su9D5tlxpJqIonevkmnN4CUGKdJf-f/view?usp=share_link"
+                    target="_blank">Upcoming Campus Recruitment Drive of uCertify for B.Tech. CSE, BCA, MCA, BBA & MBA
+                    Students <span class="badge bg-danger">New</span></a>
+            </h6>
+        </marquee>
+        <marquee behavior="alternate" direction="right">
+            <h6><a href="#"><span class="badge bg-danger">Update</span><strong> There will be a registration fees of
+                        ₹100
+                        in uCertify Placement Drive</strong></a>
+            </h6>
+        </marquee>
+        <marquee behavior="scroll" direction="left">
+            <h6><a href="https://forms.gle/v8wgDSJi571cq2pB7" target="_blank">
+                    Registration Form for Jio Smart Sales Trainee (For Graduates) </a><span
+                    class="badge bg-danger">New</span>
+            </h6>
+        </marquee>
+    </section>
     <!-- End Hero -->
 
     <!-- News & events -->
@@ -276,11 +309,11 @@
     <section id="atAGlance" class="atAGlance mx-xl-3" data-aos="fade-up">
         <div class="section-title">
             <h2>At a Glance</h2>
-            <p>Various activities happening in & around the campus by Training & Placement Cell of Khwaja Moinuddin
-                Chishti
+            <p>Various activities happening in & around the campus by Training &
+                Placement Cell of Khwaja Moinuddin Chishti
                 Langauge University</p>
         </div>
-        <div class="card-group  text-center">
+        <div class="card-group text-center">
             <div class="card mb-3">
                 <div class="card-header sticky-top">
                     <h5 class="card-title">News & Notice</h5>
@@ -320,13 +353,21 @@
                     </div>
                     <p class="card-text">
                         <ul>
-                            <li><a href="https://drive.google.com/file/d/19V_SSIh6p1VhVm_0A5xyKaEIRN7r6XRt/view?usp=share_link"
-                                    target="_blank">32 Students of Mechanical Engineering Placed in Renault Nissan</a>
+                            <li><a href="https://drive.google.com/file/d/1Hm1Qcqnw62BdpeG_xnzPxJzMKAB7Wy0P/view?usp=sharing"
+                                    target="_blank">6 Students of B.Tech. CSE Placed in Mind You Infotech</a></li>
+                            <li><a href="https://drive.google.com/file/d/1HavJXom8_o1XJJe5MhK-aJ12dLE1rJC8/view?usp=sharing"
+                                    target="_blank">1 Student of Biotechnology Placed in Experiome Life Sciences</a>
                             </li>
-                            <li><a href="#" target="_blank">11 Students Placed in Pie Infocomm</a></li>
-                            <li><a href="#" target="_blank">6 Students placed in Club Oxygen</a></li>
+                            <li><a href="https://drive.google.com/file/d/19V_SSIh6p1VhVm_0A5xyKaEIRN7r6XRt/view?usp=share_link"
+                                    target="_blank">32 Students of Mechanical Engineering
+                                    Placed in Renault Nissan</a></li>
+                            <li><a href="#" target="_blank">11 Students Placed in Pie
+                                    Infocomm</a></li>
+                            <li><a href="#" target="_blank">6 Students placed in Club
+                                    Oxygen</a></li>
                             <li><a href="#" target="_blank">2 Students placed in Ultratech</a></li>
-                            <li><a href="#" target="_blank">1 Student Placed in Synclovis Systems</a></li>
+                            <li><a href="#" target="_blank">1 Student Placed in Synclovis
+                                    Systems</a></li>
                             <!-- <li><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur</a></li>
               <li><a href="#" target="_blank">Lorem ipsum dolor sit amet consectetur</a></li> -->
                         </ul>
@@ -379,23 +420,28 @@
                     <p class="card-text">
                         <ul>
                             <li><a href="https://drive.google.com/file/d/1C6cDwz9_iY5ykBcU3lN4OAioScxPRtth/view?usp=share_link"
-                                    target="_blank">Two Days Workshop on Bioinformatics by Experiome Biotech</a>
+                                    target="_blank">Two Days Workshop on Bioinformatics by
+                                    Experiome Biotech</a>
                             </li>
                             <li><a href="https://drive.google.com/file/d/1ABhOJx7vHEKnGX0DA28gPeaHmLr-DwsC/view?usp=share_link"
-                                    target="_blank">Astronomers Club Members Observed Lunar Eclipse 2022</a>
+                                    target="_blank">Astronomers Club Members Observed Lunar
+                                    Eclipse 2022</a>
                             </li>
                             <li><a href="https://drive.google.com/file/d/18LcS0Bsui22FkStkaWNkeXCK-pWiuY8B/view?usp=share_link"
-                                    target="_blank">Special Lecture by Mr. Vijay Kumar, Director Pie Infocmm</a>
+                                    target="_blank">Special Lecture by Mr. Vijay Kumar,
+                                    Director Pie Infocmm</a>
                             </li>
                             <li><a href="https://drive.google.com/file/d/1KgmuD7REH-0YK7hfL0RL-mwC89SKub7V/view?usp=share_link"
                                     target="_blank">Orientation
                                     Workshop by IBM & REACHA Foundation</a></li>
-                            <li><a href="#" target="_blank">Internship under ESD Program by
+                            <li><a href="#" target="_blank">Internship under ESD Program
+                                    by
                                     Bluebook</a></li>
-                            <li><a href="#" target="_blank">Delegation from KMCLU took part in Innovation Day organised
-                                    by CSTUP</a>
+                            <li><a href="#" target="_blank">Delegation from KMCLU took
+                                    part in Innovation Day organised by CSTUP</a>
                             </li>
-                            <li><a href="#" target="_blank">Workshop on Python Langauge by Softpro Company</a></li>
+                            <li><a href="#" target="_blank">Workshop on Python Langauge by
+                                    Softpro Company</a></li>
                             <li><a href="#" target="_blank">Workshop on IoT by Electrocus</a></li>
                             <li><a href="#" target="_blank">Training program by Microsoft</a></li>
                             <!-- <li><a href="#" target="_blank"></a></li> -->
@@ -437,12 +483,20 @@
                     </div>
                     <p class="card-text">
                         <ul>
+                            <li><a href="https://drive.google.com/file/d/1BVwKAcsxekl6DJ3qKZI_LsGWoqoYgMsm/view?usp=sharing"
+                                    target="_blank">Job Notification for Mind You Infotech</a></li>
+                            <li><a href="https://drive.google.com/file/d/18gCmjXw-dxDwAZ9CGDidFxUaXE9fWw19/view?usp=sharing"
+                                    target="_blank">Job Notification for Experiome Biotech</a></li>
                             <li><a href="https://drive.google.com/file/d/1-y0r9Cuh1ELHKD35ykeh14YEcX-vD8EG/view?usp=share_link"
-                                    target="_blank">Job Notification
-                                    for Pool Campus Drive Diploma In Mechanical Engineering Students</a></li>
+                                    target="_blank">Job Notification for Gillette</a></li>
+                            <li><a href="https://drive.google.com/file/d/1HtbnvXEzXZmgwoXVpHEM1XBjQXQeQJab/view?usp=sharing"
+                                    target="_blank">Job Notification for Mayur</a></li>
+                            <li><a href="https://drive.google.com/file/d/1-y0r9Cuh1ELHKD35ykeh14YEcX-vD8EG/view?usp=share_link"
+                                    target="_blank">Job Notification for Dana India</a></li>
+                            <li><a href="https://drive.google.com/file/d/1I4TSl805kSF65JCwr-OM_qx3QhtUdZcd/view?usp=sharing"
+                                    target="_blank">Job Notification for Renault Nissan</a></li>
                             <li><a href="https://drive.google.com/file/d/1i7nFAQpIeizaGZM4iYmxFvx8DJRqRMy8/view?usp=share_link"
-                                    target="_blank">Job Notification
-                                    For Pie Infocomm</a></li>
+                                    target="_blank">Job Notification For Pie Infocomm</a></li>
                             <li><a href="https://drive.google.com/file/d/1m5XZj_bmAkS9DSKeQWMIRt6ujis79Loo/view?usp=share_link"
                                     target="_blank">Job Notification For Club Oxygen</a></li>
                             <li><a href="#" target="_blank">Job Notification For Uptoskills</a></li>
@@ -477,14 +531,14 @@
                         <p>
                             The University also introduced
                             B.Tech. Program in Civil Engineering, Mechanical
-                            Engineering, Computer Science Engineering, Fashion Technology,Bio Technology, CSE with
-                            Artificial
-                            Intelligence & Machine Learning, CSE with Artificial Intelligence with Data Science and
-                            Robotics &
+                            Engineering, Computer Science Engineering, Fashion
+                            Technology,Bio Technology, CSE with Artificial
+                            Intelligence & Machine Learning, CSE with Artificial
+                            Intelligence with Data Science and Robotics &
                             Automation in the University.
                             <br>
-                            University also offers M.Tech. Program in Mechatronics and CSE with Artificial Intelligence
-                            & Machine
+                            University also offers M.Tech. Program in Mechatronics and CSE
+                            with Artificial Intelligence & Machine
                             Learning.
                         </p>
                     </div>
@@ -494,8 +548,8 @@
                             <li><i class="ri-check-double-line"></i>Highly qualified & experienced faculty & experts
                             </li>
                             <li><i class="ri-check-double-line"></i>Full hands-on experience with multiple labs,
-                                workshops, industry
-                                visit and seminars</li>
+                                workshops,
+                                industry visit and seminars</li>
                             <li><i class="ri-check-double-line"></i>Promotion of Innovation & Entrepreneurship</li>
                         </ul>
                     </div>
@@ -561,8 +615,8 @@
 
                 <div class="section-title">
                     <h2>Training and Placement Cell</h2>
-                    <p>The experieced faculty of the Univeristy looks after the training & placement cell to provide the
-                        best
+                    <p>The experieced faculty of the Univeristy looks after the
+                        training & placement cell to provide the best
                         exposure to its students.</p>
                 </div>
 
@@ -775,7 +829,8 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Our Training & Recruiting Partners</h2>
-                    <p>We tied-up with the industry experts and leader across vast domains to provide the best hands-on
+                    <p>We tied-up with the industry experts and leader across vast
+                        domains to provide the best hands-on
                         opportunities to learn, intern and work with best companies.</p>
                 </div>
                 <div class="row">
@@ -934,7 +989,8 @@
                 <div class="section-title">
                     <h2>Placement Highlights</h2>
                     <p>What our placed student say about their placement and
-                        what are there opinion about University and training and placement cell of our university. </p>
+                        what are there opinion about University and training and
+                        placement cell of our university. </p>
                 </div>
 
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -944,15 +1000,14 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    This side Vivek from CSE, KMCLU. I am really grateful to everyone at KMCLU for
-                                    nurturing my career
-                                    and giving me the right platform to develop the right skills for the corporate
-                                    world. My stay at KMCLU
+                                    This side Vivek from CSE, KMCLU. I am really grateful to
+                                    everyone at KMCLU for nurturing my career
+                                    and giving me the right platform to develop the right
+                                    skills for the corporate world. My stay at KMCLU
                                     has been
-                                    filled with lot of academic inputs from my faculties clubbed with technical and
-                                    behavioral trainings
+                                    filled with lot of academic inputs from my faculties
+                                    clubbed with technical and behavioral trainings
                                     from external agencies.
-                                    <!-- I feel proud to be GNITIAN… -->
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="assets/img/testimonials/1.jpeg" class="testimonial-img" alt="">
@@ -967,11 +1022,14 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    KMCLU is a wonderful place for all the students seeking the right career.
-                                    My college has given me and all my friends a lot of opportunities to get the right
-                                    job. The staff at
-                                    KMCLU is very supportive and really takes a lot of pain to develop the students.
-                                    I am thankful to my faculties, staff and management of KMCLU for my success.
+                                    KMCLU is a wonderful place for all the students seeking
+                                    the right career.
+                                    My college has given me and all my friends a lot of
+                                    opportunities to get the right job. The staff at
+                                    KMCLU is very supportive and really takes a lot of pain to
+                                    develop the students.
+                                    I am thankful to my faculties, staff and management of
+                                    KMCLU for my success.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="assets/img/testimonials/2.Jpg" class="testimonial-img" alt="">
@@ -987,12 +1045,13 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Kudos to the Faculty and Placement Cell of KMCLU. The College has always provided me
-                                    with every
+                                    Kudos to the Faculty and Placement Cell of KMCLU. The
+                                    College has always provided me with every
                                     assistance that I have always wanted to.
-                                    I was able to refine my overall Performances and build- on my Soft & Hard Skills..
-                                    I will always be grateful to them for providing me a platform of practical learning
-                                    and preparing me
+                                    I was able to refine my overall Performances and build- on
+                                    my Soft & Hard Skills..
+                                    I will always be grateful to them for providing me a
+                                    platform of practical learning and preparing me
                                     for the corporate life.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
@@ -1008,13 +1067,13 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Getting placed during the college is a dream for all the students and this dream
-                                    came to reality when
+                                    Getting placed during the college is a dream for all the
+                                    students and this dream came to reality when
                                     I got placed in Balaji Construction.
-                                    My decision of joining KMCLU proved right when I got opportunity to work for Acxiom
-                                    Consulting.
-                                    I and my parents are really thankful to the management and college authorities for
-                                    making my dream
+                                    My decision of joining KMCLU proved right when I got
+                                    opportunity to work for Acxiom Consulting.
+                                    I and my parents are really thankful to the management and
+                                    college authorities for making my dream
                                     come into reality..
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
@@ -1030,13 +1089,14 @@
                             <div class="testimonial-item">
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    I am very happy to be placed with Pie Infocomm. For every student it’s a dream to
-                                    get job during their
+                                    I am very happy to be placed with Pie Infocomm. For every
+                                    student it’s a dream to get job during their
                                     studies and I was lucky to get one.
-                                    KMCLU takes a lot of pain to develop their students for the corporate world
-                                    throughout four years at
+                                    KMCLU takes a lot of pain to develop their students for
+                                    the corporate world throughout four years at
                                     the campus.
-                                    I would recommend KMCLU to any student who is looking for a fruitful career.
+                                    I would recommend KMCLU to any student who is looking for
+                                    a fruitful career.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                                 <img src="assets/img/testimonials/5.jpeg" class="testimonial-img" alt="">
@@ -1046,6 +1106,93 @@
                             </div>
                         </div>
                         <!-- End testimonial item -->
+
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    I am really thankful to my KMC University , especially,
+                                    the Training and Placement Cell for giving ample number of
+                                    opportunities to help me get through best of the
+                                    Companies. The endeavour and enthusiasm of Training &
+                                    Placement Cell is very appreciable and it keeps me
+                                    motivated and determined for my career.I wish good luck to the coming batches of my
+                                    university.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="assets/img/testimonials/saif.webp" class="testimonial-img" alt="">
+                                <h3>Saif Ali</h3>
+                                <h4>Renault Nissan</h4>
+                                <h4>@2.5 LPA </h4>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    I am really very thankful to the faculty and management who are very co-operative
+                                    and always ready
+                                    to help. My special thanks to my faculty for guiding me to improve my knowledge and
+                                    enhance my
+                                    skills, and last but not least our placement Director Sir for providing me this
+                                    golden
+                                    opportunity. Thank you very much.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="assets/img/testimonials/bhola.webp" class="testimonial-img" alt="">
+                                <h3>Bhola Upadhyay</h3>
+                                <h4>Pie Infocomm</h4>
+                                <h4>@4.5 LPA </h4>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Every student’s dream is to get an opportunity to start their career with well-known
+                                    MNC, and I
+                                    got placed in Teamlease Education foundation . Thanks to Training & Placement
+                                    department for
+                                    providing this opportunity. I am looking forward for an excellent career.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="assets/img/testimonials/adeeba.webp" class="testimonial-img" alt="">
+                                <h3>Adeeba Mumtaz</h3>
+                                <h4>Teamlease Education foundation</h4>
+                                <h4>@ LPA </h4>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Our College has provided us very enhanced and efficient platform for the exposure to
+                                    the training
+                                    and placement. I am very thankful to KMCLU management for providing us the best of
+                                    placement
+                                    opportunities. Also, the pre-placement trainings have helped me a lot for campus
+                                    placements.
+
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="assets/img/testimonials/Reetika.jpeg" class="testimonial-img" alt="">
+                                <h3>Reetika Kushwaha</h3>
+                                <h4>Mind You Infotech</h4>
+                                <h4>@1.7 LPA </h4>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="swiper-pagination"></div>
@@ -1060,9 +1207,10 @@
             <div class="container" data-aos="zoom-in">
                 <div class="text-center">
                     <h3>Download Our Brochure</h3>
-                    <p>Know more about the University and the Training & Placement Cell</p>
-                    <a class="cta-btn" href="assets/documents/Training And Placement Cell Brochure KMCLU Final.pdf"
-                        target="_blank">Download Brochure</a>
+                    <p>Know more about the University and the Training & Placement
+                        Cell</p>
+                    <a class="cta-btn" href="assets/documents/Training And Placement
+                Cell Brochure KMCLU Final.pdf" target="_blank">Download Brochure</a>
                 </div>
             </div>
         </section>
@@ -1074,14 +1222,14 @@
 
                 <div class="section-title">
                     <h2>Contact Us</h2>
-                    <p>Feel free to contact us for any queries regarding admission, placement, campus or anything else.
-                        Your
+                    <p>Feel free to contact us for any queries regarding admission,
+                        placement, campus or anything else. Your
                         queries are welcomed.</p>
                 </div>
 
                 <div>
                     <iframe style="border:0; width: 100%; height: 270px;"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.19889253149!2d80.89393731441238!3d26.92890848312061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399956564d730943%3A0xa3f27afc8ce7218b!2sKhwaja%20Moinuddin%20Chishti%20Language%20University!5e0!3m2!1sen!2sin!4v1666037251353!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.187486133232!2d80.8939309142385!3d26.92927016586166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399955039ac0d003%3A0xd505669fbc5e153a!2sTraining%20and%20Placement%20Cell%2C%20KMCLU!5e0!3m2!1sen!2sin!4v1669614939339!5m2!1sen!2sin"
                         frameborder="0" allowfullscreen></iframe>
                 </div>
 
@@ -1138,15 +1286,7 @@
                                 <textarea class="form-control" name="message" rows="5" placeholder="Message"
                                     required></textarea>
                             </div>
-                            <div class="my-3">
-                                <div id="message1" style="display: none;">
-                                    <p>
-                                        Your response has been recorded, Thank You.
-                                    </p>
-                                </div>
-                            </div>
                             <div class="text-center"><button type="submit">Send Message</button></div>
-
                         </form>
 
                     </div>
@@ -1177,8 +1317,10 @@
                         <h4>Useful Links</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#atAGlance">News and Events</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#about">About
+                                    us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#atAGlance">News
+                                    and Events</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#testimonials">Placement Highlights</a>
                             </li>
                             <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
@@ -1191,9 +1333,8 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="https://www.kmclu.ac.in"
                                     target="_blank">KMCLU
                                     Website</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a
-                                    href="assets/documents/Training And Placement Cell Brochure KMCLU Final.pdf"
-                                    target="_blank">Brochure
+                            <li><i class="bx bx-chevron-right"></i> <a href="assets/documents/Training And Placement Cell
+                      Brochure KMCLU Final.pdf" target="_blank">Brochure
                                     download</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="https://www.kmclu.club" target="_blank">Our
                                     Clubs</a>
@@ -1230,7 +1371,7 @@
                     All Rights Reserved
                 </div>
                 <div>
-                    Last Updated on <strong><span>25-Nov-2022</span></strong>
+                    Last Updated on <strong><span>28-Nov-2022</span></strong>
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -1252,10 +1393,13 @@
                     <strong>
                         Developed by
                         <a href="https://github.com/SubhanRaj" target="_blank">Subhan Raj</a>,
-                        <a href="https://github.com/SahilAli8808" target="_blank">Sahil Ali</a> and
-                        <a href="https://github.com/mishravaishnavi" target="_blank">Vaishnavi Mishra</a>
+                        <a href="https://github.com/SahilAli8808" target="_blank">Sahil
+                            Ali</a> and
+                        <a href="https://github.com/mishravaishnavi" target="_blank">Vaishnavi
+                            Mishra</a>
                         Under the Guidance of
-                        <a href="#">Ms. Nidhi Sonkar</a>.
+                        <a href="https://www.linkedin.com/in/nidhi-sonkar-334657125/" target="_blank">Ms. Nidhi
+                            Sonkar</a>.
                         Maintained by Training & Placement Cell, KMCLU
                     </strong>
                 </p>
@@ -1265,7 +1409,7 @@
 
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center
-        justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -1276,6 +1420,7 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="assets/vendor/datatables/datatables.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
@@ -1288,7 +1433,7 @@
                 type: 'post',
                 data: jQuery('#contact-form').serialize(),
                 success: function (result) {
-                    jQuery('#message1').show();
+                    swal("Thank You!", "We will contact you soon!", "success");
                     jQuery('#contact-form')[0].reset();
 
                 }
@@ -1309,6 +1454,11 @@
                 }
             })
         })
+    </script>
+    <script>
+        window.addEventListener('offline', function (e) {
+            swal("Oops", "You are offline!", "error")
+        });
     </script>
 </body>
 
