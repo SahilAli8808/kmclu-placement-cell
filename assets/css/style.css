@@ -553,19 +553,38 @@ section {
 #atAGlance .card-body {
   text-align: left;
 }
-#atAGlance .card-body .card-text ul {
-  margin: 0;
+#atAGlance .card-body .card-text  ul {
+  list-style: none;
   padding: 0;
-  list-style: circle;
 }
-#atAGlance .card-body ul li a {
+
+#atAGlance .card-body .card-text  ul li {
+  padding-left: 28px;
+  position: relative;
+}
+
+#atAGlance .card-body.card-text  ul li+li {
+  margin-top: 10px;
+}
+
+#atAGlance .card-body .card-text  ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #ff5828;
+  line-height: 1;
+}
+
+#atAGlance .card-body .card-text ul li a {
   font-weight: 600;
   text-decoration: none;
   color: #000;
 }
-#atAGlance .card-body ul li a:hover {
+#atAGlance .card-body .card-text ul li a:hover {
   color: #ff5828;
 }
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
