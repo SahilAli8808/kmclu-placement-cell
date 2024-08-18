@@ -10,7 +10,7 @@
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -23,14 +23,14 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #af8322;
+  background-color: #ff572881;
   border-radius: 10px;
   transition: .4s;
 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: orange;
+  background-color: #ff5828;
 }
 
 body {
@@ -541,7 +541,7 @@ section {
 /* At a Glance */
 #atAGlance .card {
   height: 85vh;
-  overflow-x: scroll !important;
+  overflow-y: scroll !important;
   margin: 0 0.5rem;
   border-radius: 0.25rem;
 }
